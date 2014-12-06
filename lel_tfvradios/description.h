@@ -178,7 +178,11 @@ class HiddenFlip:HiddenButton{
 	};
 };
 
-#include "\lel_tfvradios\tfv_tf_anprc152.ext"
-#include "\lel_tfvradios\tfv_rf7800str.ext"
+#include "\lel_tfvradios\tfv_tf_anprc152_p.ext"
+#include "\lel_tfvradios\tfv_tf_anprc152_v.ext"
+#include "\lel_tfvradios\tfv_tf_anprc152_l.ext"
+#include "\lel_tfvradios\tfv_rf7800str_p.ext"
+#include "\lel_tfvradios\tfv_rf7800str_v.ext"
+#include "\lel_tfvradios\tfv_rf7800str_l.ext"
 #include "\lel_tfvradios\tfv_rt1523g.ext"
 #include "\lel_tfvradios\tfv_anarc210.ext"

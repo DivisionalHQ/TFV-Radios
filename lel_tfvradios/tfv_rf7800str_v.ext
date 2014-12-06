@@ -1,7 +1,7 @@
 /* #Folofi
 $[
 	1.063,
-	["lel_rf7800str_dialog",[["0","0","1","1"],"0.0025","0.004","GUI_GRID"],0,1,1],
+	["lel_rf7800str_dialog_v",[["0","0","1","1"],"0.0025","0.004","GUI_GRID"],0,1,1],
 	[1200,"background",[1,"lel_tfvradios\data\rf7800str.paa",["-0.0207812 * safezoneW + safezoneX","-0.5373 * safezoneH + safezoneY","0.418172 * safezoneW","1.551 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1602,"channel_Switch",[1,"",["0.122047 * safezoneW + safezoneX","0.3053 * safezoneH + safezoneY","0.028875 * safezoneW","0.0319 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"Previous channel","-1"],[]],
 	[1604,"speakers",[1,"",["0.267453 * safezoneW + safezoneX","0.4626 * safezoneH + safezoneY","0.0144375 * safezoneW","0.0605 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"Increase volume","-1"],[]],
@@ -18,7 +18,7 @@ $[
 */
 
 
-class lel_rf7800str_dialog
+class lel_rf7800str_dialog_v
 {
 	idd = IDD_RF7800STR_RADIO_DIALOG;
 	movingEnable = 1;

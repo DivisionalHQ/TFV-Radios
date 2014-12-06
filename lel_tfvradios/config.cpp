@@ -6,7 +6,7 @@ class CfgPatches
 	class loberg_tfv_radios
 	{
 		units[] = {"tfv_tf_rt1523g","tfv_tf_anarc210"};
-		weapons[] = {"tfv_tf_anprc152","tfv_tf_rf7800str"};
+		weapons[] = {"tfv_tf_anprc152_p","tfv_tf_anprc152_v","tfv_tf_anprc152_l","tfv_tf_rf7800str_p","tfv_tf_rf7800str_v","tfv_tf_rf7800str_l"};
 		requiredVersion = 1.0;
 		requiredAddons[] = {"task_force_radio_items"};
 		author[] = {"Loberg"};
@@ -60,15 +60,49 @@ class CfgWeapons
 {
 	class tf_anprc152; 
 
-		class tfv_tf_anprc152: tf_anprc152
+		class tfv_tf_anprc152_p: tf_anprc152
 	{
-		displayName = "TFV AN/PRC-152";
-		descriptionShort = "AN/PRC-152 5km";
+		displayName = "TFV-P AN/PRC-152";
+		descriptionShort = "AN/PRC-152 5km - Papa units";
 		scope=2;
 		scopeCurator = 2;
 		icon="iconBackpack";
 		tf_encryptionCode = "tf_west_radio_code";
-		tf_dialog = "lel_anprc152_dialog";
+		tf_dialog = "lel_anprc152_dialog_p";
+		tf_subtype = "digital";
+		tf_dialogUpdate = "call TFAR_fnc_updateSWDialogToChannel;";
+		tf_prototype = 1;
+		tf_range = 5000;
+		tf_parent = "tf_anprc152";	
+		tf_additional_channel = 1;		
+	};
+	
+	class tfv_tf_anprc152_v: tf_anprc152
+	{
+		displayName = "TFV-V AN/PRC-152";
+		descriptionShort = "AN/PRC-152 5km - Victor units";
+		scope=2;
+		scopeCurator = 2;
+		icon="iconBackpack";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "lel_anprc152_dialog_v";
+		tf_subtype = "digital";
+		tf_dialogUpdate = "call TFAR_fnc_updateSWDialogToChannel;";
+		tf_prototype = 1;
+		tf_range = 5000;
+		tf_parent = "tf_anprc152";	
+		tf_additional_channel = 1;		
+	};
+	
+	class tfv_tf_anprc152_l: tf_anprc152
+	{
+		displayName = "TFV-L AN/PRC-152";
+		descriptionShort = "AN/PRC-152 5km - Lima units";
+		scope=2;
+		scopeCurator = 2;
+		icon="iconBackpack";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "lel_anprc152_dialog_l";
 		tf_subtype = "digital";
 		tf_dialogUpdate = "call TFAR_fnc_updateSWDialogToChannel;";
 		tf_prototype = 1;
@@ -79,15 +113,15 @@ class CfgWeapons
 	
 	class tf_rf7800str; 
 
-		class tfv_tf_rf7800str: tf_rf7800str
+		class tfv_tf_rf7800str_p: tf_rf7800str
 	{
-		displayName = "TFV RF-7800S-TR";
-		descriptionShort = "RF-7800S-TR rifleman radio 2km";
+		displayName = "TFV-P RF-7800S-TR";
+		descriptionShort = "RF-7800S-TR 2km - Papa Units";
 		scope=2;
 		scopeCurator = 2;
 		icon="iconBackpack";
 		tf_encryptionCode = "tf_west_radio_code";
-		tf_dialog = "lel_rf7800str_dialog";
+		tf_dialog = "lel_rf7800str_dialog_p";
 		tf_subtype = "digital";
 		tf_dialogUpdate = "call TFAR_fnc_updateSWDialogToChannel;";
 		tf_prototype = 1;
@@ -96,7 +130,44 @@ class CfgWeapons
 		tf_additional_channel = 0;
 	};
 	
+		class tfv_tf_rf7800str_v: tf_rf7800str
+	{
+		displayName = "TFV-V RF-7800S-TR";
+		descriptionShort = "RF-7800S-TR 2km - Victor Units";
+		scope=2;
+		scopeCurator = 2;
+		icon="iconBackpack";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "lel_rf7800str_dialog_v";
+		tf_subtype = "digital";
+		tf_dialogUpdate = "call TFAR_fnc_updateSWDialogToChannel;";
+		tf_prototype = 1;
+		tf_range = 2000;
+		tf_parent = "tf_rf7800str";
+		tf_additional_channel = 0;
+	};
 	
-TF_RADIO_IDS(tfv_tf_anprc152,TFV AN/PRC-152)
-TF_RADIO_IDS(tfv_tf_rf7800str,TFV RF-7800S-TR)
+		class tfv_tf_rf7800str_l: tf_rf7800str
+	{
+		displayName = "TFV-L RF-7800S-TR";
+		descriptionShort = "RF-7800S-TR 2km - Lima Units";
+		scope=2;
+		scopeCurator = 2;
+		icon="iconBackpack";
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "lel_rf7800str_dialog_l";
+		tf_subtype = "digital";
+		tf_dialogUpdate = "call TFAR_fnc_updateSWDialogToChannel;";
+		tf_prototype = 1;
+		tf_range = 2000;
+		tf_parent = "tf_rf7800str";
+		tf_additional_channel = 0;
+	};
+	
+TF_RADIO_IDS(tfv_tf_anprc152_p,TFV-P AN/PRC-152)
+TF_RADIO_IDS(tfv_tf_anprc152_v,TFV-V AN/PRC-152)
+TF_RADIO_IDS(tfv_tf_anprc152_l,TFV-L AN/PRC-152)
+TF_RADIO_IDS(tfv_tf_rf7800str_p,TFV-P RF-7800S-TR)
+TF_RADIO_IDS(tfv_tf_rf7800str_v,TFV-V RF-7800S-TR)
+TF_RADIO_IDS(tfv_tf_rf7800str_l,TFV-L RF-7800S-TR)
 };
