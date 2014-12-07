@@ -1,8 +1,8 @@
 /* #Tunizo
 $[
 	1.063,
-	["lel_anprc152_dialog_inf",[["0","0","1","1"],"0.001","0.001","GUI_GRID"],0,1,0],
-	[1200,"background",[1,"lel_tfvradios\data\152_inf.paa",["0.0138687 * safezoneW + safezoneX","-1.28145 * safezoneH + safezoneY","0.335981 * safezoneW","2.2902 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	["lel_anprc152_dialog_p",[["0","0","1","1"],"0.001","0.001","GUI_GRID"],0,1,0],
+	[1200,"background",[1,"lel_tfvradios\data\152_papa.paa",["0.0138687 * safezoneW + safezoneX","-1.28145 * safezoneH + safezoneY","0.335981 * safezoneW","2.2902 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1400,"edit",[1,"",["0.168556 * safezoneW + safezoneX","0.4824 * safezoneH + safezoneY","0.0599875 * safezoneW","0.043175 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1600,"enter",[1,"",["0.205887 * safezoneW + safezoneX","0.56985 * safezoneH + safezoneY","0.0146438 * safezoneW","0.0198 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1601,"clear",[1,"",["0.205269 * safezoneW + safezoneX","0.60285 * safezoneH + safezoneY","0.0144375 * safezoneW","0.017875 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
@@ -18,13 +18,13 @@ $[
 
 
 
-class lel_anprc152_dialog_inf
+class lel_anprc152_dialog_p
 {
 	idd = IDD_ANPRC152_RADIO_DIALOG;
 	movingEnable = 1;
 	controlsBackground[] = { };
 	objects[] = { };
-	onLoad = "if(sunOrMoon < 0.2)then{((_this select 0) displayCtrl TF_BACKGROUND_ID) ctrlSetText 'lel_tfvradios\data\152_n_inf.paa';};";
+	onLoad = "if(sunOrMoon < 0.2)then{((_this select 0) displayCtrl TF_BACKGROUND_ID) ctrlSetText 'lel_tfvradios\data\152_papa_n.paa';};";
 	controls[]=
 {
 	background,
@@ -44,7 +44,7 @@ class lel_anprc152_dialog_inf
 class background: RscBackPicture
 {
 	idc = IDC_ANPRC152_BACKGROUND;
-	text = "\lel_tfvradios\data\152_inf.paa";
+	text = "\lel_tfvradios\data\152_papa.paa";
 	x = 0.0138687 * safezoneW + safezoneX;
 	y = -1.28145 * safezoneH + safezoneY;
 	w = 0.335981 * safezoneW;
